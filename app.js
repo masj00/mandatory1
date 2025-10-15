@@ -11,15 +11,17 @@ app.use(express.json());
 app.use(express.static("public")) //IDK skal undersøge
 
 // ========================= PAGES =====================================
+import { frontpagePage, allePage } from './util/pageUtil.js';
+
 
 
 app.get("/", (req, res) => {
-    res.sendFile(path.resolve("public/frontend/index.html"))
+    res.send(frontpagePage);
 });
 
-app.get("/l1", (req, res) => {
-    res.sendFile(path.resolve("public/frontend/leksioner/leksion1.html"))
-})
+app.get("/alle", (req, res) => {
+    res.send(allePage);
+});
 
 // ========================= API =======================================
 

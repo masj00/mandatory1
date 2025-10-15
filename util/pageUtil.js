@@ -7,10 +7,11 @@ export const frontpagePage = constructPage(frontpage, {
 });
 
 
-/*
-const matches = readPage("./public/pages/matches/matches.html");
-export const matchesPage = constructPage(matches, {
-    cssLinks: `<link rel="stylesheet" href="/pages/matches/matches.css">`
+
+const alle = readPage("./public/pages/overviewpage/overview.html");
+export const allePage = constructPage(alle, {
+        tabTitle: "Documentation | Overview",
+        cssLinks: `<link rel="stylesheet" href="/pages/overviewpage/overview.css">`
 });
-*/
+
 
