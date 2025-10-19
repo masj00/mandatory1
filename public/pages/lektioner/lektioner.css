@@ -1,0 +1,55 @@
+body {
+    font-family: system-ui, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    line-height: 1.5;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  .goal {
+    background: #000000;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    transition: background 0.2s;
+  }
+
+  .goal:hover {
+    background: #964646;
+  }
+
+  .goal-header {
+    cursor: pointer;
+    padding: 10px 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .goal-header::after {
+    content: "▼";
+    font-size: 0.8em;
+    transition: transform 0.2s;
+  }
+
+  .goal.open .goal-header::after {
+    transform: rotate(180deg);
+  }
+
+  .goal-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 14px;
+    color: #f2f2f2;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+
+  .goal.open .goal-content {
+    max-height: 200px; /* nok til tekst, ellers sæt større */
+    padding: 8px 14px 14px;
+  }
