@@ -40,6 +40,15 @@
 <div class="goal">
   <div class="goal-header">Can create a server with Express from memory.</div>
   <div class="goal-content">
+    <li> First you create a package.json file and then insert: </li>
+    <li><code>{
+    "dependencies": { "express": "^5.1.0" }}; </code></li>
+    <li> Then run <code>npm install</code> in the terminal to install Express. </li>
+    <li> After that you can create an index.js file where you can write your server code. </li>
+    <li> You can then import express with: <code>const express = require('express');</code> </li>
+    <li> Then you can create an app with: <code>const app = express();</code> </li>
+    <li> After that you can set up a route with: <code>app.get('/', (req, res) => { res.send('Hello World'); });</code> </li>
+    <li> Then:<code>app.listen(8080, () => { console.log('Server is running on port 8080'); });</code> </li>
   </div>
 </div>
 
