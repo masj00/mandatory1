@@ -4,24 +4,35 @@
 <div class="goal">
   <div class="goal-header">Can work with both types of import/export in HTML.</div>
   <div class="goal-content">
+    <li>You can use the script in html like this:</li>
+      <pre><code>&lt;script src="./pages/lektioner/lektioner.js"&gt;&lt;/script&gt;</code></pre>
   </div>
 </div>
 
 <div class="goal">
   <div class="goal-header">Can import/export in both ways in Node.js (CommonJS and ES Modules). Knows the pros of using ES Modules.</div>
   <div class="goal-content">
-  </div>
+    <li><strong>CommonJS:</strong><code>const fs = require("fs"); module.exports = myFunction;</code></li>
+    <li><strong>ES Modules:</strong><code>import fs from "fs"; export default myFunction;</code></li>
+    <li><strong>Pros of ES Modules:</strong></li>
+    <li>It is now the standard in JavaScript</li>
+    <li>Top level await support</li>
+</div>
 </div>
 
 <div class="goal">
   <div class="goal-header">Understands the security need for serving static files and can do it in Express.</div>
   <div class="goal-content">
+    <li> You can serve static files in express by using the built in middleware function express.static. </li>
+    <li> Example: <code>app.use(express.static('public'));</code> This will serve all files in the public folder. </li>
   </div>
 </div>
 
 <div class="goal">
   <div class="goal-header">Can recount the number of ways and approaches to redirection.</div>
   <div class="goal-content">
+    <li>You can do it in express with this: <code>res.redirect("/newpage");</code></li>
+    <li>Also in Html (client side) with: <code>window.location.href = "/newpage";</code></li>
   </div>
 </div>
 
