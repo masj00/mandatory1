@@ -31,6 +31,14 @@
 <div class="goal">
   <div class="goal-header">Can make a POST request and parse the body in Express.</div>
   <div class="goal-content">
+    <li>You can make a POST request in Express by defining a route with <code>app.post()</code> and using <code>express.json()</code> middleware to parse the request body.</li>
+    <li><code>app.use(express.json());
+
+app.post("/fashionbrands", (req, res) => {
+  console.log(req.body);       // parses and logs JSON body
+  res.send({ data: req.body }); // sends it back as response
+});
+</code></li>
   </div>
 </div>
 
