@@ -4,27 +4,42 @@
 <div class="goal">
   <div class="goal-header">Understands the use case for Nodemon and its limitation for development.</div>
   <div class="goal-content">
+    <li>Nodemon is a tool that helps during development by automatically restarting the Node.js application 
+      when file changes in the directory are detected.</li>
+    <li>you can also edit when it updates based on which files are edited for example html files and js files</li>
+    <li>you can do it by creating a nodemon.json and insert: <code>{"ext": "js,json,html,css"}</code></li>
   </div>
 </div>
 
 <div class="goal">
-  <div class="goal-header">Can use loop methods (+map, +filter, %reduce). Can choose the right one at the appropriate time:</div>
+  <div class="goal-header">Can use loop methods (+map, +filter, %reduce). Can choose the right one at the appropriate time.</div>
   <div class="goal-content">
-    We wish to use loop methods and in a functional manner (avoiding side effects).
-
-    Only use for loops in JavaScript when finger counting.
+    <li>.forEach() runs a function for each element and doesn't return a value.</li>
+    <li>.map() creates a new array by transforming each element.</li>
+    <li>.filter() returns a new array with elements that pass a test.</li>
+    <li>.reduce() combines all elements into a single value (sum, object, etc.).</li>
+    <li>.sort() sorts elements in place (modifies the original array).</li>
+    <li>These are just some of them and you can read more about them on w3schools for example</li>
   </div>
 </div>
 
 <div class="goal">
   <div class="goal-header">Understands why a functional approach to loops is to be preferred and how to implement it without side effects.</div>
   <div class="goal-content">
+    <li>methods like .map(), .filter(), .reduce(), .forEach() is preferred because it makes code more readable.</li>
+    <li>And understanding what each one does so you can know where to put said loop</li>
   </div>
 </div>
 
 <div class="goal">
   <div class="goal-header">Can use the right terminology when it comes to the different parts of an URL.</div>
   <div class="goal-content">
+    <li><strong>Protocol:</strong>https://</li>
+    <li><strong>Domain:</strong>example.com</li>
+    <li><strong>Port:</strong>:8080</li>
+    <li><strong>Path:</strong>/leksion3</li>
+    <li><strong>Query-String:</strong>?id=5&sort=asc</li>
+    <li><strong>Fragment:</strong>#section1</li>
   </div>
 </div>
 
@@ -32,12 +47,10 @@
   <div class="goal-header">Can make a POST request and parse the body in Express.</div>
   <div class="goal-content">
     <li>You can make a POST request in Express by defining a route with <code>app.post()</code> and using <code>express.json()</code> middleware to parse the request body.</li>
-    <li><code>app.use(express.json());
-
-app.post("/fashionbrands", (req, res) => {
-  console.log(req.body);       // parses and logs JSON body
-  res.send({ data: req.body }); // sends it back as response
-});
+    <li><code>app.use(express.json());</code></li>
+    <li><code>app.post("/fashionbrands", (req, res) => { </code></li>
+    <li><code>  console.log(req.body);       // parses and logs JSON body</code></li>
+    <li><code>  res.send({ data: req.body }); // sends it back as response});
 </code></li>
   </div>
 </div>
